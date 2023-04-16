@@ -606,3 +606,27 @@
 // }
 
 // console.log(sequential(7));
+
+// Replacing if else chains with switch
+
+// function chainToSwitch(val){
+//     var answer = "";
+//     switch (val){
+//     case "bob":
+//         answer = "Marley"
+//         break;
+    
+//     case 42:
+//         answer = "The Answer"
+//         break;
+//     case 1:
+//         answer = "There is no #1";
+//         break;
+//     case 7:
+//         answer = "Ate Nine"
+//         break;
+//     }
+//     return answer
+
+// }
+// console.log(chainToSwitch(7))

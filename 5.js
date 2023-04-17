@@ -757,3 +757,29 @@
 // myDog["legs"]= 6
 
 // console.log(myDog)
+
+//Add New Properties to an Object
+
+// var ourDog ={
+//         "name": "Camper",
+//         "legs": 4,
+//         "tails": 1,
+//         "friends": ["everything!"]
+//     }
+//     ourDog.bark = "woof woof"
+    
+// console.log(ourDog)
+
+// Delete Properties From an Object
+
+// var ourDog ={
+//     "name": "Camper",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["everything!"]
+// }
+// delete ourDog.bark 
+    
+// console.log(ourDog)
+
+//Using Objects for Lookups

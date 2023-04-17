@@ -651,3 +651,109 @@
 // console.log(abTest(2,-2));
 
 //counting cards
+
+// var count = 0;
+
+// function cc(card){
+//     switch(card){
+//         case 2:
+//         case 3:
+//         case 4:
+//         case 5:
+//         case 6:
+//             count++;
+//             break;
+//         case 10:
+//         case "J":
+//         case "Q":
+//         case "k":
+//         case "A":
+//             count--;
+//             break;
+
+        
+//     }
+//     var holdbet = 'Hold'
+//     if (count > 0){
+//         holdbet = "Bet"
+//     }
+//     return count + " " +holdbet;
+// }
+// cc(2);cc(10);cc('k');cc('k');cc('A');
+// console.log(cc(4))
+
+// Build JavaScript Objects
+// var ourDog = {
+//     "name": "Camper",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["everything"]
+// };
+
+// var myDog = {
+//     "name": "Quincy",
+//     "legs": 3,
+//     "tails": 2,
+//     "friends":[]
+// }
+
+//Accessing Object Properties with Dot Notatio
+//dot method to access object property values
+// var testObj = {
+//     "hat":"ballcap",
+//     "shirt":"jersey",
+//     "shoes":"cleats"
+// }
+// var hatValue = testObj.hat
+// var shirtValue = testObj.shirt
+
+// console.log(hatValue, shirtValue)
+
+//Accessing Object Properties with Bracket Notation
+// Using bracket notation , normally used when ther 
+//is a space between an objects property name
+
+// var testObj = {
+//     "an entree":"hamburger",
+//     "my side": "veggies",
+//     "the drink": "water"
+// }
+
+// var entreeValue = testObj["an entree"]
+
+// console.log(entreeValue)
+
+//Accessing Object Properties with Variables
+
+// var testObj = {
+//     12: "Namath",
+//     16: "Montana",
+//     19: "Unaitas"
+// }
+//  var playerNumber = 16
+//  var player = testObj[playerNumber]
+
+//  console.log(player , playerNumber)
+
+// Updating Object Properties
+
+// var ourDog ={
+//     "name": "Camper",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["everything!"]
+// }
+// ourDog.name = " Happy Camper"
+
+// console.log(ourDog)
+
+// var myDog = {
+//     "name": "Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"]
+// };
+
+// myDog["legs"]= 6
+
+// console.log(myDog)

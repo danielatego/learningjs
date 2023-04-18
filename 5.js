@@ -783,3 +783,103 @@
 // console.log(ourDog)
 
 //Using Objects for Lookups
+
+// function phoneticLookup(val){
+//     var result = val;
+//     var lookup ={
+//         "alpha":"Adams",
+//         "bravo":"Boston",
+//         "charlie":"Chicago",
+//         "delta":"Denver",
+//         "echo":"Easy",
+//         "foxtrot":"Frank"
+//     };
+//     console.log(result)
+//     return  lookup[result]
+    
+//     // switch(val){
+//     //     case "alpha":
+//     //         result = "Adams";
+//     //         break;
+//     //     case "bravo":
+//     //         result = "Boston";
+//     //         break;
+//     //     case "charlie":
+//     //         result = "Chicago";
+//     //         break;
+//     //     case "delta":
+//     //         result = "Denver";
+//     //         break;
+//     //     case "echo":
+//     //         result = "Easy";
+//     //         break;
+//     //     case "foxtrot":
+//     //         result = "Frank";
+        
+//     // }
+// }
+// console.log(phoneticLookup('charlie'))
+
+//Testing Object for Properties
+
+// var myObj = {
+//     gift : "pony",
+//     pet : "kitten",
+//     bed: "sleigh"
+// };
+
+// function checkObj(checkProp){
+
+//     if (myObj.hasOwnProperty(checkProp)){
+//         return myObj[checkProp];
+//     }else{
+//         return "Not Found"
+//     }
+    
+// }
+// console.log(checkObj("gifit"));
+
+//Manipulating Complex Objects
+
+// var myMusic = [
+//     {
+//         "artist":"Billy Joel",
+//         "title": "Piano Man",
+//         "release_year": 1973,
+//         "formats": [
+//             "CD",
+//             "8T",
+//             "LP"
+//         ],
+//         "gold":true
+//     },
+//     {
+//         "artist": "Stephen Moses",
+//         "title": "Raising Sons",
+//         "release_year": 1994,
+//         "formats": [
+//             "CD",
+//             "DVD",
+//             "BLUE RAY"
+//         ],
+//         "gold": true
+//     }
+
+// ]
+
+// Accessing Nested Objects
+
+var myStorage = {
+    "car": {
+        "inside":{
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk":"jack"
+        }
+    }
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"]
+console.log(gloveBoxContents)

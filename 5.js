@@ -869,17 +869,43 @@
 
 // Accessing Nested Objects
 
-var myStorage = {
-    "car": {
-        "inside":{
-            "glove box": "maps",
-            "passenger seat": "crumbs"
-        },
-        "outside": {
-            "trunk":"jack"
-        }
-    }
-};
+// var myStorage = {
+//     "car": {
+//         "inside":{
+//             "glove box": "maps",
+//             "passenger seat": "crumbs"
+//         },
+//         "outside": {
+//             "trunk":"jack"
+//         }
+//     }
+// };
 
-var gloveBoxContents = myStorage.car.inside["glove box"]
-console.log(gloveBoxContents)
+// var gloveBoxContents = myStorage.car.inside["glove box"]
+// console.log(gloveBoxContents)
+
+//Accessing Nested Arrays
+
+// var myPlants = [ 
+//     {
+//         type: "flowers",
+//         list: [
+//             "rose",
+//             "tulips",
+//             "dandelion"
+//         ]
+//     },
+//     {
+//         type: "trees",
+//         list: [
+//             "fir",
+//             "pine",
+//             "birch"
+//         ]
+//     }
+// ]
+
+// var secondTree = myPlants[1].list[1];
+// console.log(secondTree)
+
+// Record Collection

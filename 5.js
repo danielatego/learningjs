@@ -992,3 +992,29 @@
 //     myArray.push(i);
 // }
 // console.log(myArray)
+
+//Iterate Through an Array with a For Loop
+
+// var myArray = [1,4,5,2,5,7,"mary"];
+// for (i = 0; i< myArray.length;i++){
+//     console.log(myArray[i])
+// }
+
+//Nesting For Loops
+
+// function multiplyAll(arr){
+//     var product = 1;
+//     for (var i = 0; i< arr.length; i++){
+//         for (r = 0; r < arr[i].length;r++){
+//             product*=arr[i][r];
+//         }
+//     }
+
+//     return product ;
+
+// }
+// var product = multiplyAll([[1,2],[3,4],[5,6,7]])
+// console.log(product)
+
+//Do While Loops
+

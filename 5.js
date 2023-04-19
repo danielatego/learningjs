@@ -908,4 +908,87 @@
 // var secondTree = myPlants[1].list[1];
 // console.log(secondTree)
 
-// Record Collection
+// // Record Collection
+// var collection = {
+//     "2548":{
+//         "album": "Slippery When Wet",
+//         "artist": "Bon Jovi",
+//         "tracks":[
+//             "Let It Rock",
+//             "You Give Love a Bad Name"
+//         ]
+//     },
+//     "2468":{
+//         "album": "1999",
+//         "artist": "Prince",
+//         "tracks": [
+//             "1999",
+//             "Little Red Corvette"
+//         ]
+//     },
+//     "1245":{
+//         "artist": "Robert Palmer ",
+//         "tracks":[]
+//     },
+//     "5439":{
+//         "album":"ABBA Gold"
+
+//     }
+// }
+// //keep a copy of the collection gor tests
+// var collectionCopy = JSON.parse(JSON.stringify(collection));
+
+// function updateRecords(id,prop, value){
+
+//     if (value === ""){
+//         delete collection[id][prop]
+//     }else if (prop === "tracks"){
+//         collection[id][prop] = collection[id][prop] || [];
+//         collection[id][prop].push(value);
+//     }else {
+//         collection[id][prop]=value;
+//     }
+     
+//     return collection;
+// }
+
+// // Alter values below to test your code
+// console.log(updateRecords(2468,"tracks","test"))
+// console.log(updateRecords(5439,"artist","ABBA"));
+
+//Iterate with While Loops
+
+// var myArray =[];
+// var i = 0 ;
+// while ( i < 5 ){
+//     myArray.push(i)
+//     i++;
+// }
+// console.log(myArray)
+
+//Iterate with for loops
+
+// var ourArray = [];
+
+// for ( var i = 0; i < 5; i++){
+//     ourArray.push(i);
+// }
+// console.log(ourArray)
+
+//Iterate Odd Numbers with a For Loop
+
+
+// var ourArray = [];
+
+// for(var i = 0; i<10;i+=2){
+//     ourArray.push(i)
+// }
+// console.log(ourArray)
+
+//Count Backwords with a For Loop
+
+// var myArray=[];
+// for (i =10;i>0;i--){
+//     myArray.push(i);
+// }
+// console.log(myArray)

@@ -1018,11 +1018,53 @@
 
 //Iterate with Do... While Loops
 
-var myArray = [ ];
-var i = 10;
+// var myArray = [ ];
+// var i = 10;
 
-do{
-    myArray.push(i);
-    i++;
-} while (i< 5)
-console.log(i, myArray);
+// do{
+//     myArray.push(i);
+//     i++;
+// } while (i< 5)
+// console.log(i, myArray);
+
+//Profile Lookeup
+
+var contacts = [
+    {
+        "firstName ": "Akira",
+        "lastName ": "Laine",
+        "number ": "45465568525",
+        "likes": ['pizza', "Coding", "Brownie Points"]
+    },
+    {
+        "firstName ": "Harry ",
+        "lastName ": "Potter",
+        "number ": "45465565525",
+        "likes": ['Hogwarts', "Magic", "Hagrid"]
+    },
+    {
+        "firstName ": "Sherlock ",
+        "lastName ": "Holmes",
+        "number ": "45465578525",
+        "likes": ['Intriguing Cases', "Violin"]
+    },
+    {
+        "firstName ": "Christian",
+        "lastName ": "Vos",
+        "number ": "unknown",
+        "likes": ['JavaScript', "Gaming ", "Foxes"]
+    }
+ ]
+ function lookUpProfile(name, prop){
+    for( i = 0; i < contacts.length; i++){
+        if (name == contacts[i]["firstName "]){
+            return contacts[i][prop] || "no such property"
+
+        }
+        
+    }
+
+ }
+
+ var data = lookUpProfile("Akira","likes");
+ console.log(lookUpProfile("Akira","lijkes"))

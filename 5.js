@@ -1029,42 +1029,55 @@
 
 //Profile Lookeup
 
-var contacts = [
-    {
-        "firstName ": "Akira",
-        "lastName ": "Laine",
-        "number ": "45465568525",
-        "likes": ['pizza', "Coding", "Brownie Points"]
-    },
-    {
-        "firstName ": "Harry ",
-        "lastName ": "Potter",
-        "number ": "45465565525",
-        "likes": ['Hogwarts', "Magic", "Hagrid"]
-    },
-    {
-        "firstName ": "Sherlock ",
-        "lastName ": "Holmes",
-        "number ": "45465578525",
-        "likes": ['Intriguing Cases', "Violin"]
-    },
-    {
-        "firstName ": "Christian",
-        "lastName ": "Vos",
-        "number ": "unknown",
-        "likes": ['JavaScript', "Gaming ", "Foxes"]
-    }
- ]
- function lookUpProfile(name, prop){
-    for( i = 0; i < contacts.length; i++){
-        if (name == contacts[i]["firstName "]){
-            return contacts[i][prop] || "no such property"
+// var contacts = [
+//     {
+//         "firstName ": "Akira",
+//         "lastName ": "Laine",
+//         "number ": "45465568525",
+//         "likes": ['pizza', "Coding", "Brownie Points"]
+//     },
+//     {
+//         "firstName ": "Harry ",
+//         "lastName ": "Potter",
+//         "number ": "45465565525",
+//         "likes": ['Hogwarts', "Magic", "Hagrid"]
+//     },
+//     {
+//         "firstName ": "Sherlock ",
+//         "lastName ": "Holmes",
+//         "number ": "45465578525",
+//         "likes": ['Intriguing Cases', "Violin"]
+//     },
+//     {
+//         "firstName ": "Christian",
+//         "lastName ": "Vos",
+//         "number ": "unknown",
+//         "likes": ['JavaScript', "Gaming ", "Foxes"]
+//     }
+//  ]
+//  function lookUpProfile(name, prop){
+//     for( i = 0; i < contacts.length; i++){
+//         if (name == contacts[i]["firstName "]){
+//             return contacts[i][prop] || "no such property"
 
-        }
+//         }
         
-    }
+//     }
 
- }
+//  }
 
- var data = lookUpProfile("Akira","likes");
- console.log(lookUpProfile("Akira","lijkes"))
+//  var data = lookUpProfile("Akira","likes");
+//  console.log(lookUpProfile("Akira","lijkes"))
+
+//Generate Random Fractions
+
+function randomFraction(){
+
+    return Math.random();
+}
+console.log(randomFraction())
+
+//  Generate Random Whole Numbers
+
+var randomNumbersBetween0and19 = Math.floor(Math.random()*20);
+console.log( randomNumbersBetween0and19)

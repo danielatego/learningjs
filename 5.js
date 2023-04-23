@@ -1158,16 +1158,30 @@
 
 //Declare a Read-Only Variable with the const Keyword
 
-function printManyTimes(str){
+// function printManyTimes(str){
+//     "use strict";
+//     const sentence = str + " is cool";
+//     /*a const is scope defined 
+//     it is read only
+//     i.e you cannot reassign a const
+//     it is good practice to  to capitalize constants */
+//     sentence = str + " is amazing";
+//     for (var i = 0; i < str.length; i+=2){
+//         console.log(sentence);
+//         console.log(sentence);
+//     }
+// }
+// printManyTimes("freeCodeCamp");
+
+//Mutate an Array Declared with const
+
+const s = [ 5,7,2];
+function editInPlace(){
     "use strict";
-    const sentence = str + " is cool";
-    /*a const is scope defined 
-    it is read only
-    i.e you cannot reassign a const
-    it is good practice to  to capitalize constants */
-    sentence = str + " is amazing";
-    for (var i = 0; i < str.length; i+=2){
-        console.log(sentence);
-    }
+
+    //s = [ 2,5,7]; is read-only hence the erro
+    s.push(3);
+    s[2]=9;
+    console.log(s)
 }
-printManyTimes("freeCodeCamp");
+editInPlace();

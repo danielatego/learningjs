@@ -1175,13 +1175,37 @@
 
 //Mutate an Array Declared with const
 
-const s = [ 5,7,2];
-function editInPlace(){
-    "use strict";
+// const s = [ 5,7,2];
+// function editInPlace(){
+//     "use strict";
 
-    //s = [ 2,5,7]; is read-only hence the erro
-    s.push(3);
-    s[2]=9;
-    console.log(s)
+//     //s = [ 2,5,7]; is read-only hence the erro
+//     s.push(3);
+//     s[2]=9;
+//     console.log(s)
+// }
+// editInPlace();
+
+//Prevent Object Mutation
+
+function freezeObj(){
+    "use strict";
+    const MATH_CONSTANTS = {
+        PI:3.14
+    };
+    
+
+    Object.freeze(MATH_CONSTANTS);
+    try {
+        MATH_CONSTANTS.PI = 99;
+    }catch (ex){
+        console.log(ex)
+    }
+    return MATH_CONSTANTS.PI
 }
-editInPlace();
+const PI = freezeObj();
+var MATH_CONSTANTS ={
+    PIY :PI, 
+}
+console.log(PI);
+console.log(MATH_CONSTANTS.PI)

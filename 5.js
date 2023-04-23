@@ -1071,13 +1071,30 @@
 
 //Generate Random Fractions
 
-function randomFraction(){
+// function randomFraction(){
 
-    return Math.random();
+//     return Math.random();
+// }
+// console.log(randomFraction())
+
+// //  Generate Random Whole Numbers
+
+// var randomNumbersBetween0and19 = Math.floor(Math.random()*20);
+// console.log( randomNumbersBetween0and19)
+
+//Generate Random Numbers within a Range
+
+// function ourRandomRange(ourMin, ourMax){
+//     return Math.floor(Math.random()*(ourMax - ourMin)) + ourMin
+// }
+
+// console.log(ourRandomRange(55,50));
+// console.log(5-3+1)
+
+//Use the parseInt Function
+
+function convertToInteger(str){
+
+    return parseInt(str)
 }
-console.log(randomFraction())
-
-//  Generate Random Whole Numbers
-
-var randomNumbersBetween0and19 = Math.floor(Math.random()*20);
-console.log( randomNumbersBetween0and19)
+console.log(convertToInteger('56'));

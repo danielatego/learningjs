@@ -1188,24 +1188,28 @@
 
 //Prevent Object Mutation
 
-function freezeObj(){
-    "use strict";
-    const MATH_CONSTANTS = {
-        PI:3.14
-    };
+// function freezeObj(){
+//     "use strict";
+//     const MATH_CONSTANTS = {
+//         PI:3.14
+//     };
     
 
-    Object.freeze(MATH_CONSTANTS);
-    try {
-        MATH_CONSTANTS.PI = 99;
-    }catch (ex){
-        console.log(ex)
-    }
-    return MATH_CONSTANTS.PI
-}
-const PI = freezeObj();
-var MATH_CONSTANTS ={
-    PIY :PI, 
-}
-console.log(PI);
-console.log(MATH_CONSTANTS.PI)
+//     Object.freeze(MATH_CONSTANTS);
+//     try {
+//         MATH_CONSTANTS.PI = 99;
+//     }catch (ex){
+//         console.log(ex)
+//     }
+//     return MATH_CONSTANTS.PI
+// }
+// const PI = freezeObj();
+// var MATH_CONSTANTS ={
+//     PIY :PI, 
+// }
+// console.log(PI);
+// console.log(MATH_CONSTANTS.PI)
+
+//Use Arrow Functions to Write Concise Anonymous Functions
+
+var magic = ()=>new Date();

@@ -1116,10 +1116,28 @@
 
 // Use Multiple Conditional (Ternary) Operators
 
-function checkSign(num){
+// function checkSign(num){
 
-    return num>0 ? 'positive': num<0? 'negative':'zero'
+//     return num>0 ? 'positive': num<0? 'negative':'zero'
 
+// }
+
+// console.log(checkSign(0));
+
+//differences between var and let
+"use strict"; //only declared variables will be used in this case quota is used undeclareds hence
+//it will generate an error
+var catName = 'Quincy';
+var quote;
+var fibonacci;
+
+var catName = 'Beau'; //let does not allow you to declare a variable twice
+
+function catTalk(){
+
+    catName = "Oliver";
+    quota = catName+" says Meow!";
+    return quota;
 }
-
-console.log(checkSign(0));
+console.log(`${catName} says Hello`)
+console.log(catTalk());

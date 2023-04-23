@@ -1093,8 +1093,16 @@
 
 //Use the parseInt Function
 
+// function convertToInteger(str){
+
+//     return parseInt(str)
+// }
+// console.log(convertToInteger('56'));
+
+// Use the parseInt Function with a Radix 
+
 function convertToInteger(str){
 
-    return parseInt(str)
+    return parseInt(str,2)//it is automatically converted to base 10, the 2 indicates its base (binary)
 }
-console.log(convertToInteger('56'));
+console.log(convertToInteger('10011'));

@@ -1101,8 +1101,16 @@
 
 // Use the parseInt Function with a Radix 
 
-function convertToInteger(str){
+// function convertToInteger(str){
 
-    return parseInt(str,2)//it is automatically converted to base 10, the 2 indicates its base (binary)
+//     return parseInt(str,2)//it is automatically converted to base 10, the 2 indicates its base (binary)
+// }
+// console.log(convertToInteger('10011'));
+
+// Use the Conditional (Ternary) Operator
+
+function checkEqual(a,b){
+   return (a===b) ? true: false;
 }
-console.log(convertToInteger('10011'));
+console.log(checkEqual(1,2))
+

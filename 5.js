@@ -1127,17 +1127,31 @@
 //differences between var and let
 "use strict"; //only declared variables will be used in this case quota is used undeclareds hence
 //it will generate an error
-var catName = 'Quincy';
-var quote;
-var fibonacci;
+// var catName = 'Quincy';
+// var quote;
+// var fibonacci;
 
-var catName = 'Beau'; //let does not allow you to declare a variable twice
+// var catName = 'Beau'; //let does not allow you to declare a variable twice
 
-function catTalk(){
+// function catTalk(){
 
-    catName = "Oliver";
-    quota = catName+" says Meow!";
-    return quota;
+//     catName = "Oliver";
+//     quota = catName+" says Meow!";
+//     return quota;
+// }
+// console.log(`${catName} says Hello`)
+// console.log(catTalk());
+
+//Compare scopes of the var and let Keywords
+
+function checkScope (){
+"use strict";
+    let i = "function scope"
+    if (true){
+         let i = "block scope";
+        console.log("Block scope i is: ", i)
+    } 
+    console.log('function scope i is: ', i)
+    return i;
 }
-console.log(`${catName} says Hello`)
-console.log(catTalk());
+checkScope();

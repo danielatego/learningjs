@@ -1144,14 +1144,30 @@
 
 //Compare scopes of the var and let Keywords
 
-function checkScope (){
-"use strict";
-    let i = "function scope"
-    if (true){
-         let i = "block scope";
-        console.log("Block scope i is: ", i)
-    } 
-    console.log('function scope i is: ', i)
-    return i;
+// function checkScope (){
+// "use strict";
+//     //let i = "function scope" // let is scope defined
+//     if (true){
+//          let i = "block scope";
+//         console.log("Block scope i is: ", i)
+//     } 
+//     console.log('function scope i is: ', i)
+//     return i;
+// }
+// checkScope();
+
+//Declare a Read-Only Variable with the const Keyword
+
+function printManyTimes(str){
+    "use strict";
+    const sentence = str + " is cool";
+    /*a const is scope defined 
+    it is read only
+    i.e you cannot reassign a const
+    it is good practice to  to capitalize constants */
+    sentence = str + " is amazing";
+    for (var i = 0; i < str.length; i+=2){
+        console.log(sentence);
+    }
 }
-checkScope();
+printManyTimes("freeCodeCamp");

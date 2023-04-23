@@ -1212,4 +1212,11 @@
 
 //Use Arrow Functions to Write Concise Anonymous Functions
 
-var magic = ()=>new Date();
+// var magic = ()=>new Date();
+
+//Write Arrow Functions with Parameters
+
+var myConcat = (arr1,arr2)=>{
+    return arr1.concat(arr2)
+}
+console.log(myConcat([1,3],[2,6,4]))

@@ -1243,9 +1243,23 @@
 
 //Use the Rest Operator with Function Parameters
 
-const sum = (function(){
-    return function sum (...aorgs){//thie is the rest of operator it take in any number of inputs the name of this inputs in our case is aorgs
-        return aorgs.reduce((a,b)=>a*b,1);
-    };
+// const sum = (function(){
+//     return function sum (...aorgs){//thie is the rest of operator it take in any number of inputs the name of this inputs in our case is aorgs
+//         return aorgs.reduce((a,b)=>a*b,1);
+//     };
+// })();
+// console.log(sum(1,2,3))
+
+// Use the Spread Operator to Evaluate Arrays In-Place
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2 ;
+(function(){
+    arr2 = arr1;//this is not a copy operation 
+    //but it is a pointer such that the preceeding statement
+    //changes the affected values in both arrays
+    // the spread operator is used to make a copy of the array
+    arr2 = [...arr1]; //this makes a copy of array1
+    arr1[0] = 'potato';
 })();
-console.log(sum(1,2,3))
+console.log(arr2);

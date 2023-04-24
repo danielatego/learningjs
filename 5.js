@@ -1232,11 +1232,20 @@
 
 //write higher order arrow functions
 
-const increment = (function(){
-    return function increment(number=1,value=1){
-        return number + value;
+// const increment = (function(){
+//     return function increment(number=1,value=1){
+//         return number + value;
+//     };
+// })();
+// console.log(increment (5,2));
+// console.log(increment(5));
+// console.log(increment());
+
+//Use the Rest Operator with Function Parameters
+
+const sum = (function(){
+    return function sum (...aorgs){//thie is the rest of operator it take in any number of inputs the name of this inputs in our case is aorgs
+        return aorgs.reduce((a,b)=>a*b,1);
     };
 })();
-console.log(increment (5,2));
-console.log(increment(5));
-console.log(increment());
+console.log(sum(1,2,3))

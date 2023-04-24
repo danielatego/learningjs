@@ -1335,19 +1335,54 @@
 //Use Destructuring Assignment to Pass an Object as a Function's Parameter
 
 
-const stats = {
-    max: 56.78,
-    standard_deviation : 4.34,
-    median: 34.54,
-    mode: 23.87,
-    min: -0.75,
-    average: 35.85
-}; 
+// const stats = {
+//     max: 56.78,
+//     standard_deviation : 4.34,
+//     median: 34.54,
+//     mode: 23.87,
+//     min: -0.75,
+//     average: 35.85
+// }; 
 
-const half = (function(){
-    return function half({max,min}){//this is where destructuring takes place
-        return (max + min)/2.0;
-    };
-} )();
-console.log(stats);
-console.log(half(stats));
+// const half = (function(){
+//     return function half({max,min}){//this is where destructuring takes place
+//         return (max + min)/2.0;
+//     };
+// } )();
+// console.log(stats);
+// console.log(half(stats));
+
+// Create String using Template Literals
+
+const person = {
+    name: "Zodiad Hasbro",
+    age: 50
+};
+
+const greeting = `Hello my name is ${person.name}!
+I am ${person.age} years old.`;
+console.log(greeting);
+
+const result = { 
+    success: ["max- length", "no-amd", "prefer-arrow-functions"],
+    failure: [ "no-var", "var-on-top", "linebreak"],
+    skipped: [ "id-blacklist", "no-dup-keys"]
+};
+function makeList(arr){
+    const resultDisplayArray = [];
+    for (let i = 0;i< arr.length;i++){
+        resultDisplayArray.push(`<li class = "text-warning"> ${arr[i]}</li>`)
+    }
+    return resultDisplayArray;
+}
+
+/**
+ * makeList (result.failure) should return:
+ * [`<li class="text-warning">no-var</li>`,
+ *  `<li class="text-warning">var-on-top</li>`,
+ *  `<li class= "text-warning"<linebreak</li>`
+ * 
+ * ]
+ **/
+const resultDisplayArray = makeList(result.failure)
+console.log(resultDisplayArray)

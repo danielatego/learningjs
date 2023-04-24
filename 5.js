@@ -1266,24 +1266,41 @@
 
 //Use Destructuring Assignment to Assign Variables from Objects
 
-var voxel = {'x': 3.6,y: 7.4, z:6.54};
+// var voxel = {'x': 3.6,y: 7.4, z:6.54};
 
-var x = voxel.x;
-var y = voxel.y;
-var z = voxel.z;
+// var x = voxel.x;
+// var y = voxel.y;
+// var z = voxel.z;
 
-var {x:a,y:b,z:c}=voxel; //destructuring syntax
+// var {x:a,y:b,z:c}=voxel; //destructuring syntax
 
-const AVG_TEMPERATURES = {
-    today: 77.5,
-    tomorrow:79
+// const AVG_TEMPERATURES = {
+//     today: 77.5,
+//     tomorrow:79
+// };
+
+// function getTempOfTmrw(avgTemperatures){
+//     "use strict";
+
+//     const {tomorrow:tempOfTomorrow}  = avgTemperatures;
+//     return tempOfTomorrow;
+// }
+
+// console.log(getTempOfTmrw(AVG_TEMPERATURES))
+
+//Destructuring Assignment with Nested Objects
+
+const LOCAL_FORECAST = {
+    today: {min: 72, max: 83},
+    tomorrow: {min: 73.3, max: 84.6 }
 };
 
-function getTempOfTmrw(avgTemperatures){
+function getMaxOfTmrw(forecast) {
     "use strict";
-
-    const {tomorrow:tempOfTomorrow}  = avgTemperatures;
-    return tempOfTomorrow;
+    
+    const {tomorrow:{max:maxOfTomorrow }} = forecast;
+    
+    return maxOfTomorrow;
 }
 
-console.log(getTempOfTmrw(AVG_TEMPERATURES))
+console.log(getMaxOfTmrw(LOCAL_FORECAST));

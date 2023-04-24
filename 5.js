@@ -1252,14 +1252,38 @@
 
 // Use the Spread Operator to Evaluate Arrays In-Place
 
-const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
-let arr2 ;
-(function(){
-    arr2 = arr1;//this is not a copy operation 
-    //but it is a pointer such that the preceeding statement
-    //changes the affected values in both arrays
-    // the spread operator is used to make a copy of the array
-    arr2 = [...arr1]; //this makes a copy of array1
-    arr1[0] = 'potato';
-})();
-console.log(arr2);
+// const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+// let arr2 ;
+// (function(){
+//     arr2 = arr1;//this is not a copy operation 
+//     //but it is a pointer such that the preceeding statement
+//     //changes the affected values in both arrays
+//     // the spread operator is used to make a copy of the array
+//     arr2 = [...arr1]; //this makes a copy of array1
+//     arr1[0] = 'potato';
+// })();
+// console.log(arr2);
+
+//Use Destructuring Assignment to Assign Variables from Objects
+
+var voxel = {'x': 3.6,y: 7.4, z:6.54};
+
+var x = voxel.x;
+var y = voxel.y;
+var z = voxel.z;
+
+var {x:a,y:b,z:c}=voxel; //destructuring syntax
+
+const AVG_TEMPERATURES = {
+    today: 77.5,
+    tomorrow:79
+};
+
+function getTempOfTmrw(avgTemperatures){
+    "use strict";
+
+    const {tomorrow:tempOfTomorrow}  = avgTemperatures;
+    return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES))

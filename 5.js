@@ -1229,3 +1229,14 @@
 // }
 // const squaredIntegers = squareList(realNumberArray)
 // console.log(squaredIntegers);
+
+//write higher order arrow functions
+
+const increment = (function(){
+    return function increment(number=1,value=1){
+        return number + value;
+    };
+})();
+console.log(increment (5,2));
+console.log(increment(5));
+console.log(increment());

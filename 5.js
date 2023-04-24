@@ -1322,12 +1322,32 @@
 
 //Use Destructuring Assignment with Rest Operator
 
-const source = [1,2,3,4,5,6,7,8,9,10];
-function removeFirstTwo (list){
-    const [k,l, ...arr] = list;
+// const source = [1,2,3,4,5,6,7,8,9,10];
+// function removeFirstTwo (list){
+//     const [,,, ...arr] = list;
     
-    return arr;
-}
-const arr = removeFirstTwo(source);
-console.log(arr);
-console.log(source);
+//     return arr;
+// }
+// const arr = removeFirstTwo(source);
+// console.log(arr);
+// console.log(source);
+
+//Use Destructuring Assignment to Pass an Object as a Function's Parameter
+
+
+const stats = {
+    max: 56.78,
+    standard_deviation : 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+}; 
+
+const half = (function(){
+    return function half({max,min}){//this is where destructuring takes place
+        return (max + min)/2.0;
+    };
+} )();
+console.log(stats);
+console.log(half(stats));

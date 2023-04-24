@@ -1290,17 +1290,32 @@
 
 //Destructuring Assignment with Nested Objects
 
-const LOCAL_FORECAST = {
-    today: {min: 72, max: 83},
-    tomorrow: {min: 73.3, max: 84.6 }
-};
+// const LOCAL_FORECAST = {
+//     today: {min: 72, max: 83},
+//     tomorrow: {min: 73.3, max: 84.6 }
+// };
 
-function getMaxOfTmrw(forecast) {
+// function getMaxOfTmrw(forecast) {
+//     "use strict";
+    
+//     const {tomorrow:{max:maxOfTomorrow }} = forecast;
+    
+//     return maxOfTomorrow;
+// }
+
+// console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+//Use Destructuring Assignment to Assign Variables from Arrays
+
+const [z,x, , , y] = [7,2,3,4,5,6];
+
+console.log(z,x,y);
+
+let a = 8, b = 6;
+
+(() => {
     "use strict";
-    
-    const {tomorrow:{max:maxOfTomorrow }} = forecast;
-    
-    return maxOfTomorrow;
-}
-
-console.log(getMaxOfTmrw(LOCAL_FORECAST));
+    [a,b] = [b,a];
+}) ();
+console.log(a);
+console.log(b);

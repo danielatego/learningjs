@@ -1394,12 +1394,41 @@
 
 //Write Concise Declarative Functions
 
-const bicycle = {
-    gear : 2,
-    'setGear'(newGear){
-        "use strict";
-        this.gear = newGear;
+// const bicycle = {
+//     gear : 2,
+//     'setGear'(newGear){
+//         "use strict";
+//         this.gear = newGear;
+//     }
+// };
+// bicycle.setGear(3);
+// console.log(bicycle.gear)
+
+//Use class Syntax to Define a Constructor funtion
+
+var SpaceShuttle = function(targetPlanet){
+    this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle('Jupiter');
+
+class SpaceShuttlfe{
+
+    constructor(mama){
+        this.targetPlanet = 'mercury',
+        this.mama =mama 
     }
-};
-bicycle.setGear(3);
-console.log(bicycle.gear)
+}
+var rewe = new SpaceShuttlfe('kenya')
+console.log(rewe.targetPlanet)
+
+function makeClass(){
+    class Vegetable{
+    constructor(name){
+        this.name = name
+    }}
+    return 'Vegetable';
+}
+const Vegetable = makeClass()
+const carrot = new Vegetable('carrot')
+console.log(Vegetable);    
+

@@ -1,6 +1,5 @@
-import { capitalizeString } from "./6.js";
-const cap = capitalizeString('hi there');
-import { foo } from "./6.js";
+import * as y  from "./6.js";
+const cap = y.capitalizeString('hi there');
 console.log(cap);
-console.log(foo)
+console.log(y.foo)
 //use export to Reuse a code Block

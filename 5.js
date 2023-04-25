@@ -1406,29 +1406,75 @@
 
 //Use class Syntax to Define a Constructor funtion
 
-var SpaceShuttle = function(targetPlanet){
-    this.targetPlanet = targetPlanet;
-}
-var zeus = new SpaceShuttle('Jupiter');
+// var SpaceShuttle = function(targetPlanet){
+//     this.targetPlanet = targetPlanet;
+// }
+// var zeus = new SpaceShuttle('Jupiter');
 
-class SpaceShuttlfe{
+// class SpaceShuttlfe{
 
-    constructor(mama){
-        this.targetPlanet = 'mercury',
-        this.mama =mama 
+//     constructor(mama){
+//         this.targetPlanet = 'mercury',
+//         this.mama =mama 
+//     }
+// }
+// var rewe = new SpaceShuttlfe('kenya')
+// console.log(rewe.targetPlanet)
+
+// function makeClass(){
+//     class Vegetable{
+//     constructor(name){
+//         this.name = name
+//     }}
+//     return 'Vegetable';
+// }
+// const Vegetable = makeClass()
+// const carrot = new Vegetable('carrot')
+// console.log(Vegetable);    
+
+//Use getters and setters to Control Access to an Object
+
+class Book {
+    constructor(author){
+        this._author = author;
+    }
+    get writer(){
+        return this._author;
+    }
+    set writer(updatedAuthor){
+        this._author = updatedAuthor;
     }
 }
-var rewe = new SpaceShuttlfe('kenya')
-console.log(rewe.targetPlanet)
+
+const michael = new Book('angel');
+console.log(michael.writer='jane');
+console.log(michael.writer)
 
 function makeClass(){
-    class Vegetable{
-    constructor(name){
-        this.name = name
-    }}
-    return 'Vegetable';
+
+    class Thermostat{
+        constructor(temp){
+            this._temp = temp;
+        }
+        get temperature(){
+            return Math.floor((this._temp-32)*5/9);
+        }
+        set temperature(newtemp){
+            this._temp = newtemp*9/5+32;
+        }
+
+    }
+
+    return Thermostat;
 }
-const Vegetable = makeClass()
-const carrot = new Vegetable('carrot')
-console.log(Vegetable);    
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+console.log(temp)
+thermos.temperature = 26;
+temp = thermos.temperature;
+console.log(temp)
+
+//Understand the Difference Between import and require
 

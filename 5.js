@@ -1434,47 +1434,47 @@
 
 //Use getters and setters to Control Access to an Object
 
-class Book {
-    constructor(author){
-        this._author = author;
-    }
-    get writer(){
-        return this._author;
-    }
-    set writer(updatedAuthor){
-        this._author = updatedAuthor;
-    }
-}
+// class Book {
+//     constructor(author){
+//         this._author = author;
+//     }
+//     get writer(){
+//         return this._author;
+//     }
+//     set writer(updatedAuthor){
+//         this._author = updatedAuthor;
+//     }
+// }
 
-const michael = new Book('angel');
-console.log(michael.writer='jane');
-console.log(michael.writer)
+// const michael = new Book('angel');
+// console.log(michael.writer='jane');
+// console.log(michael.writer)
 
-function makeClass(){
+// function makeClass(){
 
-    class Thermostat{
-        constructor(temp){
-            this._temp = temp;
-        }
-        get temperature(){
-            return Math.floor((this._temp-32)*5/9);
-        }
-        set temperature(newtemp){
-            this._temp = newtemp*9/5+32;
-        }
+//     class Thermostat{
+//         constructor(temp){
+//             this._temp = temp;
+//         }
+//         get temperature(){
+//             return Math.floor((this._temp-32)*5/9);
+//         }
+//         set temperature(newtemp){
+//             this._temp = newtemp*9/5+32;
+//         }
 
-    }
+//     }
 
-    return Thermostat;
-}
+//     return Thermostat;
+// }
 
-const Thermostat = makeClass();
-const thermos = new Thermostat(76);
-let temp = thermos.temperature;
-console.log(temp)
-thermos.temperature = 26;
-temp = thermos.temperature;
-console.log(temp)
+// const Thermostat = makeClass();
+// const thermos = new Thermostat(76);
+// let temp = thermos.temperature;
+// console.log(temp)
+// thermos.temperature = 26;
+// temp = thermos.temperature;
+// console.log(temp)
 
-//Understand the Difference Between import and require
+
 
